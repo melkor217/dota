@@ -100,8 +100,8 @@ module Dota
         end
       end
 
-      def get(interface, method, params = {}, *args)
-        do_request(method, params, interface, *args)
+      def get(interface, method, method_version, params = {}, *args)
+        do_request(method, params, interface, method_version, *args)
       end
 
       private
